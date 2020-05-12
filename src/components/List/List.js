@@ -11,11 +11,7 @@ class List extends React.Component {
   state = {
     columns: this.props.columns || [],
   };
-<<<<<<< HEAD
   static propTypes = {
-=======
-  static PropTypes = {
->>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
@@ -60,10 +56,7 @@ class List extends React.Component {
           <Creator
             text={settings.columnCreatorText}
             action={this.addColumn.bind(this)}
-<<<<<<< HEAD
-=======
             
->>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
           />
         </div>
 

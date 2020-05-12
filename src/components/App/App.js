@@ -1,13 +1,9 @@
 import React from 'react';
 import styles from './App.scss';
 import List from '../List/List.js';
-<<<<<<< HEAD
 import { pageContents, listData, settings } from '../../data/dataStore';
 import Creator from '../Creator/Creator.js';
 
-=======
-import {pageContents, listData} from '../../data/dataStore';
->>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
 
 class App extends React.Component {
   state = {
@@ -33,7 +29,6 @@ class App extends React.Component {
 
   render() {  
     return (
-<<<<<<< HEAD
       <main className={styles.component}>
         <h1 className={styles.title}>{pageContents.title}</h1>
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
@@ -45,12 +40,6 @@ class App extends React.Component {
             action={this.addList.bind(this)}
           />
         </div>
-=======
-      <main className = {styles.component}>
-        <h1 className = {styles.title}>{pageContents.title}</h1>
-        <h2 className = {styles.subtitle}>{pageContents.subtitle}</h2>
-        <List {...listData} />
->>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
       </main>
     );
   }
