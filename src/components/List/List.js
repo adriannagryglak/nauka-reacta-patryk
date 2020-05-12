@@ -11,7 +11,7 @@ class List extends React.Component {
   state = {
     columns: this.props.columns || [],
   };
-  static PropTypes = {
+  static propTypes = {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
@@ -56,7 +56,6 @@ class List extends React.Component {
           <Creator
             text={settings.columnCreatorText}
             action={this.addColumn.bind(this)}
-            
           />
         </div>
 

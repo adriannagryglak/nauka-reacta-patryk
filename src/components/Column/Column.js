@@ -10,7 +10,7 @@ class Column extends React.Component {
     state = {
         cards: this.props.cards || [],
     };
-    static PropTypes = {
+    static propTypes = {
         title: PropTypes.string,
     }
 
