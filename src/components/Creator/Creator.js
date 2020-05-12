@@ -2,7 +2,10 @@ import React from 'react';
 import styles from './Creator.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import {settings} from '../../data/dataStore.js';
+=======
+>>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
 
 class Creator extends React.Component {
   static propTypes = {
@@ -10,7 +13,11 @@ class Creator extends React.Component {
   }
 
   static defaultProps = {
+<<<<<<< HEAD
     text: settings.creator.defaultText,
+=======
+    text: 'Add new item',
+>>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
   }
 
   state = {
@@ -19,7 +26,11 @@ class Creator extends React.Component {
   }
 
   handleChange = event => {
+<<<<<<< HEAD
     console.log(event.target.value);
+=======
+    // console.log(event);
+>>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
     this.setState({
       value: event.target.value,
       visibleButtons: event.target.value.length > 0
@@ -41,7 +52,10 @@ class Creator extends React.Component {
       value: '',
       visibleButtons: false
     });
+<<<<<<< HEAD
     const result = window.confirm(settings.creator.confirmationText);
+=======
+>>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
   }
 
   render() {
@@ -52,10 +66,17 @@ class Creator extends React.Component {
           placeholder={this.props.text}
           value={this.state.value}
           onChange={this.handleChange}
+<<<<<<< HEAD
         />                                  
         <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
     <Button onClick={this.handleOK}>{settings.creator.buttonOK}</Button>
     <Button onClick={this.handleCancel} variant='danger'>{settings.creator.buttonCancel}</Button>
+=======
+        />
+        <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
+          <Button onClick={this.handleOK}>OK</Button>
+          <Button onClick={this.handleCancel} variant='danger'>cancel</Button>
+>>>>>>> 34bac04d80f3b5d583c02feba810923ceb9d6736
         </div>
       </div>
     );
