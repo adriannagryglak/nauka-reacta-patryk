@@ -7,6 +7,7 @@ import { settings } from '../../data/dataStore.js';
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
+    action: PropTypes.func,
   };
 
   static defaultProps = {
@@ -41,7 +42,8 @@ class Creator extends React.Component {
       value: '',
       visibleButtons: false,
     });
-    const result = window.confirm(settings.creator.confirmationText);
+    
+    window.confirm(settings.creator.confirmationText);
   };
 
   render() {
