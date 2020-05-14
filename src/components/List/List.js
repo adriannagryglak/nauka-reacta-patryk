@@ -56,7 +56,6 @@ class List extends React.Component {
           <Creator
             text={settings.columnCreatorText}
             action={this.addColumn.bind(this)}
-            
           />
         </div>
 
